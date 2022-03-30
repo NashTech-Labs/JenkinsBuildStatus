@@ -12,7 +12,7 @@ pipeline {
         stage('Testing') {
             steps {
                 script {
-                    sh "echo Testing"
+                    sh 'echo "Testing"'
                     sh "cat file.txt"
                 }
             }
@@ -24,7 +24,7 @@ pipeline {
             }
             
             steps{
-                sh "echo Build Started"
+                sh 'echo "Build Started"'
             }
         }
 
@@ -34,7 +34,7 @@ pipeline {
             }
             
             steps{
-                sh "Deploying App"
+                sh 'echo "Deploying App"'
             }
         }
     }
